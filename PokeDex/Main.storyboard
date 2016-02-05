@@ -5,11 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <mutableArray key="pokemonfont.ttf">
-            <string>PokemonSolidNormal</string>
-        </mutableArray>
-    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -23,8 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-Rl-IN7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oFg-Rl-IN7">
                                 <rect key="frame" x="0.0" y="67" width="600" height="533"/>
+                                <color key="backgroundColor" red="0.68627450980392157" green="0.74509803921568629" blue="0.79607843137254897" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zuH-Y2-QzN">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="67"/>
@@ -35,7 +31,7 @@
                                             <constraint firstAttribute="width" constant="389" id="HMy-df-vA0"/>
                                             <constraint firstAttribute="height" constant="39" id="Wwo-e5-cz5"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="33"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="33"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -49,7 +45,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.99215686274509807" green="0.23529411764705882" blue="0.27450980392156865" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.63137254901960782" green="0.0" blue="0.396078431372549" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="iOu-uR-9QM" firstAttribute="centerY" secondItem="zuH-Y2-QzN" secondAttribute="centerY" id="9ee-bY-vnq"/>
                                     <constraint firstAttribute="bottom" secondItem="JOq-2U-dfW" secondAttribute="bottom" constant="14" id="Knp-rS-nkj"/>
@@ -86,7 +82,7 @@
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szH-Cy-yqy">
                                                     <rect key="frame" x="0.0" y="89" width="110" height="21"/>
-                                                    <color key="backgroundColor" red="0.99215686270000003" green="0.23529411759999999" blue="0.27450980390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.054901960784313725" green="0.050980392156862744" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="5pn-Fn-jvi"/>
                                                     </constraints>
@@ -361,6 +357,7 @@
                         <outlet property="nextEvo" destination="C13-Q5-fvk" id="rQQ-ee-Bc7"/>
                         <outlet property="pokedexLbl" destination="GzC-dd-uQg" id="Ssp-NL-4lC"/>
                         <outlet property="typeLbl" destination="UWq-ru-yML" id="Gyo-gW-hEo"/>
+                        <outlet property="weightLbl" destination="VdE-OP-ZWi" id="DFf-nI-izM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lgp-ge-hBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -373,6 +370,5 @@
         <image name="135" width="120" height="120"/>
         <image name="153" width="96" height="96"/>
         <image name="457" width="96" height="96"/>
-        <image name="bg" width="1920" height="1200"/>
     </resources>
 </document>
