@@ -186,7 +186,7 @@ class Pokemon {
                     
                 }
                     
-                    
+                }
                 
             } else {
                 self._description = ""
@@ -227,7 +227,7 @@ class Pokemon {
 }
 
 }
-}
+
 
 
 
